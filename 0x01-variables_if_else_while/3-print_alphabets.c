@@ -4,7 +4,7 @@
  *
  * Descreption:prints the alphabet in lowercase, and then in uppercase
  *
- * Returnt: Alwayes 0
+ * Return: Alwayes 0
 */
 
 int main(void)
