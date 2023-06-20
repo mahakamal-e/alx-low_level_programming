@@ -6,7 +6,7 @@
  *
  * Return: Alwayes 0
 */
-int mai(void)
+int main(void)
 {
 	int f_number = 0, s_number;
 
@@ -21,7 +21,7 @@ int mai(void)
 				putchar((f_number % 10) + 48);
 				putchar(' ');
 				putchar((s_number / 10) + 48);
-				putchr((s_number % 10) + 48);
+				putchar((s_number % 10) + 48);
 
 				if (f_number != 98 || s_number != 99)
 				{
