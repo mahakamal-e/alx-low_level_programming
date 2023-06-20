@@ -5,7 +5,7 @@
  *
  * Description:
  *
- * Return:
+ * Return: alwayes 1
 */
 int main(void)
 {
