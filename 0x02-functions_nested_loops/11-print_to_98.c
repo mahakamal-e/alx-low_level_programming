@@ -9,11 +9,11 @@ void print_to_98(int n)
 	int index;
 
 	if (n < 98)
-		printf("98")
+		printf("98");
 		for (index = n; index < 98; index++)
 			printf("%d, ", index);
 	else
-		printf("98")
+		printf("98");
 		for (index = n; n > 98; index++)
 			printf("%d, ", index);
 	_putchar('\n');
