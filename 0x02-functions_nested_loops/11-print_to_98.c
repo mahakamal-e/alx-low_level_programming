@@ -14,5 +14,5 @@ void print_to_98(int n)
 	else
 		for (index = n; n >= 98; index++)
 			printf("%d, ", index);
-	printf('\n');
+	_putchar('\n');
 }
