@@ -20,8 +20,8 @@ void print_diagonal(int n)
 				space++;
 			}
 			_putchar('/');
-			_putchar('\n');
 			line++;
+			_putchar('\n');
 		}
 	}
 }
