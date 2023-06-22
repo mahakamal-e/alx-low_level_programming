@@ -5,8 +5,8 @@
 */
 void print_diagonal(int n)
 {
-	int line = 1;
-	int space = 1;
+	int line;
+	int space;
 
 	if (n <= 0)
 		_putchar('\n');
