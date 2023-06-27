@@ -10,11 +10,12 @@ char *_strcpy(char *dest, char *src)
 	/* to return null byte*/
 	int i = -1;
 
+	dest[i] = src[i];
+
 	while (src[i] != '\0')
 	{
 		i++;
 		dest[i] = src[i];
-	
 	}
 	return (dest);
 }
