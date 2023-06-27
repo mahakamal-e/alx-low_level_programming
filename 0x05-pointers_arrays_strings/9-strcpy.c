@@ -8,13 +8,10 @@
 char *_strcpy(char *dest, char *src)
 {
 	/* to return null byte*/
-	int i = -1;
+	int i;
 
-	dest[i] = src[i];
-
-	while (src[i] != '\0')
+	for (i = 0; src[i] != '\0'; ++i)
 	{
-		i++;
 		dest[i] = src[i];
 	}
 	return (dest);
