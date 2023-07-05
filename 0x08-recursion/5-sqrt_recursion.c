@@ -15,7 +15,7 @@ int _sqrt_recursion(int n)
  * square_func - get square value
  * @n: number to get square
  * @value: square root og number
- * Return: int value 
+ * Return: int value
  */
 int square_func(int n, int value)
 {
