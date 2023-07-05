@@ -4,6 +4,7 @@
  * @n: input number
  * Return: return -1 if number not have square
  */
+int square_func(int n, int value);
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
