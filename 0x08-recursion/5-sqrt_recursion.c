@@ -1,10 +1,11 @@
 #include "main.h"
+int square_func(int n, int value);
+
 /**
  * _sqrt_recursion - returns the natural square root of a number.
  * @n: input number
  * Return: return -1 if number not have square
  */
-int square_func(int n, int value);
 int _sqrt_recursion(int n)
 {
 	return (square_func(n, 1));
@@ -25,6 +26,6 @@ int square_func(int n, int value)
 	{
 		return (square_func(n, value + 1));
 	}
-	else 
+	else
 		return (-1);
 }
