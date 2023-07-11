@@ -22,7 +22,9 @@ char *_strdup(char *str)
 	n = malloc(sizeof(char) * sizeOfArray + 1);
 
 	if (n == 0)
+	{
 		return (NULL);
+	}
 	
 	for (iterat = 0; iterat < sizeOfArray; iterat++)
 			n[iterat] = str[iterat];
