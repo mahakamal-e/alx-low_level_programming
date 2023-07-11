@@ -10,7 +10,7 @@
  */
 char *_strdup(char *str)
 {
-	int iterat = 0;
+	int iterat;
 	int sizeOfArray;
 	char *n;
 
@@ -23,10 +23,11 @@ char *_strdup(char *str)
 
 	if (n == 0)
 		return (NULL);
-
-		for (i = 0; i < sizeOfarray; i++)
-			n[i] = str[i];
-
+	else
+	{
+		for (iterat = 0; iterat < sizeOfarray; iterat++)
+			n[iterat] = str[iterat];
+	}
 	return (n);
 }
 
