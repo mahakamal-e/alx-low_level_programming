@@ -21,7 +21,7 @@ int **alloc_grid(int width, int height)
 	}
 	else
 	{
-		for(x = 0; x < height; x++)
+		for (x = 0; x < height; x++)
 		{
 			n[x] = malloc(sizeof(**n) * width);
 
@@ -30,7 +30,7 @@ int **alloc_grid(int width, int height)
 				for (; x >= 0 ; x--)
 					free(n[x]);
 				free(n);
-				return(NULL);
+				return (NULL);
 			}
 		}
 		for (x = 0; x < height; x++)
@@ -38,7 +38,7 @@ int **alloc_grid(int width, int height)
 			for (y = 0; y < width; y++)
 				n[x][y] = 0;
 		}
-		return(n);
+		return (n);
 	}
 }
 
