@@ -27,12 +27,12 @@ char *str_concat(char *s1, char *s2)
 	sizeOfs1 = 0;
 	sizeOfs2 = 0;
 
-	while(s1[sizeOfs1] != '\0')
+	while (s1[sizeOfs1] != '\0')
 	{
 		n[sizeOfs1] = s1[sizeOfs1];
 		sizeOfs1++;
 	}
-	while(s2[sizeOfs2] != '\0')
+	while (s2[sizeOfs2] != '\0')
 	{
 		n[sizeOfs1] = s2[sizeOfs2];
 		sizeOfs2++;
