@@ -27,6 +27,8 @@ int strlength(char *s)
 
 	if (*s > '\0')
 		length += strlength(s + 1) + 1;
+
+	return (length);
 }
 
 /**
