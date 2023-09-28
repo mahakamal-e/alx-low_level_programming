@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * is_prime_number - function return 1 if prime number 0otherwise
+ *
  * @n: input number
  * Return: 1 if prime
  * otherwise 0
