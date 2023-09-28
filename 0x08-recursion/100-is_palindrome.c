@@ -5,23 +5,23 @@
  * Return: 1 if string empty
  * otherwise 0
  */
-int strlen(char *s);
+int strlength(char *s);
 int check(char *s, int iterat, int lengthStr);
 int is_palindrome(char *s)
 {
 	if (*s == 0)
 		return (1);
-	return (check(s, 0, strlen(s)));
+	return (check(s, 0, strlength(s)));
 }
 
 /**
- * strlen - return the length of string
+ * strlength - return the length of string
  *
  * @s: string input
  *
  * Return: int the length of string
  */
-int strlen(char *s)
+int strlength(char *s)
 {
 	int length = 0;
 
