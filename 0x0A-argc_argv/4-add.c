@@ -9,12 +9,13 @@
 int main(int argc, char *argv[])
 {
 	int sum = 0;
+	int i ,j;
 
-	for (int i = 1; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		char *c = argv[i];
 
-		for (int j = 0; c[j] != '\0'; j++)
+		for (j = 0; c[j] != '\0'; j++)
 		{
 			if (*c < '0' || *c > '9')
 			{
