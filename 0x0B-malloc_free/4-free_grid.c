@@ -2,7 +2,7 @@
 /**
  * free_grid - a function that frees a 2 dimensional grid
  * @grid: second pointer grid
- * @height: height
+ * @height: height od dimension
  */
 void free_grid(int **grid, int height)
 {

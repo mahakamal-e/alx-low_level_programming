@@ -4,7 +4,7 @@
  * a 2 dimensional array of integers
  * @width: width input
  * @height: height input
- * Return: eturn NULL on failure
+ * Return: NULL on failure
  * If width or height is 0 or negative, return NULL
  */
 int **alloc_grid(int width, int height)
