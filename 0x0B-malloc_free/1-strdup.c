@@ -25,9 +25,10 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	
 	for (iterat = 0; iterat < sizeOfArray; iterat++)
-			n[iterat] = str[iterat];
+	{
+		n[iterat] = str[iterat];
+	}
 
 	return (n);
 }
