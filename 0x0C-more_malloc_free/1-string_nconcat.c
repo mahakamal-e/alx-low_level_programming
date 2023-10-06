@@ -11,9 +11,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *s;
 	unsigned int i, j, length_s1, length_s2;
 
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
 	/* get the length of stringd s1 , s2 */
 	length_s1 = 0;
 	length_s2 = 0;
+
 
 	while (s1[length_s1] != '\0')
 		length_s1++;
