@@ -29,7 +29,7 @@ char *_memset(char *str, char c, unsigned int n)
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int totalSize;
-	void *p;
+	char *p;
 
 	totalSize = nmemb * size;
 	p = malloc(totalSize);
