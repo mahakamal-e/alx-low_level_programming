@@ -11,12 +11,12 @@
  *
  * Return: a pointer to the memory area str.
  */
-void _memset(void *str, char c, unsigned int n)
+char *_memset(char *str, char c, unsigned int n)
 {
 	unsigned int i;
 
 	for (i = 0; i < n; i++)
-		str[i];
+		str[i] = c;
 	return (str);
 }
 
