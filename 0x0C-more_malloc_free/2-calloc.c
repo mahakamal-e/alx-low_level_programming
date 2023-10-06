@@ -2,6 +2,25 @@
 #include <limits.h>
 #include <string.h>
 /**
+ * _memset - copies the character c (an unsigned char)
+ * to the first n characters of the string
+ * pointed to, by the argument str.
+ * @str: This is a pointer to the block of memory to fill
+ * @c: This is the value to be set.
+ * @n: number of char copy to c
+ *
+ * Return: a pointer to the memory area str.
+ */
+void _memset(void *str, char c, unsigned int n)
+{
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+		str[i];
+	return (str);
+}
+
+/**
  * _calloc - a function that allocates memory for an array, using malloc
  * @nmemb: number of elements
  * @size: size bytes each element
@@ -21,6 +40,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (p == NULL)
 		return (NULL);
 
-	memset(p, 0, totalSize);
+	_memset(p, 0, totalSize);
 	return (p);
 }
