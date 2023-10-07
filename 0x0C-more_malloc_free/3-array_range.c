@@ -13,13 +13,13 @@ int *array_range(int min, int max)
 
 	if (min < max)
 		return (NULL);
-	length = mix - min + 1;
+	length = max - min + 1;
 	array_n = malloc(length * sizeof(int));
 
 	if (array_n == NULL)
 		return (NULL);
-	for (i = 0; i < length; i++)
-		array_n[i] = min + i;
+	for (iterat = 0; iterat < length; iterat++)
+		array_n[iterat] = min + iterat;
 
 	return (array_n);
 }
