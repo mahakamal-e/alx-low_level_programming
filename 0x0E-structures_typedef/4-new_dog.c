@@ -15,14 +15,18 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int f_length;
 	int s_length;
 
+	/* find the length of name and owner using strlen() function */
 	f_length = strlen(name);
 	s_length = strlen(owner);
 
+	/* allocated dog in memory */
 	dog = (dog_t *) malloc(sizeof(dog_t));
 
 	if (dog == NULL)
 		return (NULL);
+
 	dog->name = malloc(sizeof(char) * (f_length + 1));
+
 	if (dog->name == NULL)
 	{
 		free(dog);
