@@ -16,9 +16,9 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	/*pointer point at the end of the array  */
 	/* and to get the end of the array we get the address of array */
 
-	int *ptr_end_arr = &array + size - 1;
+	int *ptr_end_arr = array + size - 1;
 
-	if (array != NULL && size != NULL && action != NULL)
+	if (array != NULL && action != NULL)
 		while (array <= ptr_end_arr)
 		{
 			/* in actionget the value of this place of address */
