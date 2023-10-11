@@ -11,7 +11,7 @@ int main(int __attribute__((__unused__)) argc, char **argv)
 {
 	int a;
 	int b;
-	int (*func_ptr)(int, int);
+	char *_ptr;
 
 	if (argc != 4)
 	{
@@ -23,9 +23,9 @@ int main(int __attribute__((__unused__)) argc, char **argv)
 
 	b = atoi(argv[3]);
 
-	func_ptr = get_op_func(argv[2]);
+	_ptr = argv[2];
 
-	if (!func_ptr)
+	if (get_op_func(_ptr) == NULL || _ptr[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
@@ -37,7 +37,7 @@ int main(int __attribute__((__unused__)) argc, char **argv)
 		exit(100);
 	}
 
-	printf("%d\n", func_ptr(a, b));
+	printf("%d\n", get_op_func(_ptr)(a, b));
 
 	return (0);
 }
