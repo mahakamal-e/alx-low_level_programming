@@ -20,11 +20,12 @@ int main(int __attribute__((__unused__)) argc, char **argv)
 	}
 
 	a = atoi(argv[1]);
-	func_ptr = get_op_func(argv[2]);
 
 	b = atoi(argv[3]);
 
-	if (func_ptr == NULL)
+	func_ptr = get_op_func(argv[2]);
+
+	if (!func_ptr)
 	{
 		printf("Error\n");
 		exit(99);
