@@ -10,16 +10,17 @@ void print_all(const char * const format, ...)
 	va_list arguments;
 	char *cha;
 	char *separate = "";
-	int i = 0;
+	int iterat = 0;
 
 	va_start(arguments, format);
 
-	while (format[i] != '\0')
+	while (format[iterat] != '\0')
 	{
-		switch (format[i])
+		switch (format[iterat])
 		{
 			case 'c':
-				printf("%s%c", separate, va_arg(arguments, int));
+				printf("%s", separate);
+				printf("%c", va_arg(arguments, int));
 				break;
 			case 'i':
 				printf("%s%d", separate, va_arg(arguments, int));
@@ -34,11 +35,11 @@ void print_all(const char * const format, ...)
 				printf("%s%s", separate, cha);
 				break;
 			default:
-				i++;
+				iterat++;
 				continue;
 		}
 		separate = ", ";
-		i++;
+		iterat++;
 	}
 	printf("\n");
 	va_end(arguments);
