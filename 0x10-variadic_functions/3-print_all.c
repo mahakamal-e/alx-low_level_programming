@@ -8,7 +8,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list arguments;
-	char *cha = "";
+	char *cha;
 	char *separate = "";
 	int i = 0;
 
@@ -31,10 +31,10 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(arguments, double));
 				break;
 			case 's':
+				cha = va_arg(arguments, char *);
 				if (cha == NULL)
 					printf("(nil)");
-				printf("%s", separate);
-				printf("%s", va_arg(arguments, char *));
+				printf("%s%s",separate, cha);
 				break;
 			default:
 				i++;
