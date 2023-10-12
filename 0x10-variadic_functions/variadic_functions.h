@@ -4,21 +4,6 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-/**
- * struct format - struct
- * @c: char
- * @i: integer
- * @f: float
- * @s: string
- */
-typedef struct format
-{
-char c;
-int i;
-float f;
-char *s;
-} format_t;
-
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
