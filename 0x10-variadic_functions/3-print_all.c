@@ -20,8 +20,7 @@ void print_all(const char * const format, ...)
 		switch (format[iterat])
 		{
 			case 'c':
-				printf("%s%c", separate, va_arg(arguments, int));
-				
+				printf("%s%c", separate, va_arg(arguments, int));			
 				break;
 			case 'i':
 				printf("%s%d", separate, va_arg(arguments, int));
