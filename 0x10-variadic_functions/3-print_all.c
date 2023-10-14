@@ -9,8 +9,8 @@ void print_all(const char * const format, ...)
 {
 	va_list arguments;
 	char *cha;
-	int  flag;
 	int iterat;
+	int flag;
 
 	va_start(arguments, format);
 	iterat = 0;
@@ -36,6 +36,7 @@ void print_all(const char * const format, ...)
 				if (cha == NULL)
 					printf("(nil)");
 				printf("%s", cha);
+				flag = 0;
 				break;
 			default:
 				flag = 1;
