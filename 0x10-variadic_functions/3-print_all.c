@@ -15,7 +15,7 @@ void print_all(const char * const format, ...)
 	va_start(arguments, format);
 	iterat = 0;
 
-	while (format[iterat] != '\0')
+	while (format[iterat] != '\0' && format != NULL)
 	{
 		switch (format[iterat])
 		{
