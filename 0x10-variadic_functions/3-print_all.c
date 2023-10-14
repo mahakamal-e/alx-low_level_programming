@@ -38,7 +38,7 @@ void print_all(const char * const format, ...)
 				iterat++;
 				continue;
 		}
-		separate = "";
+		separate = ", ";
 		iterat++;
 	}
 	printf("\n");
