@@ -9,7 +9,7 @@ void print_all(const char * const format, ...)
 {
 	va_list arguments;
 	char *cha;
-	char flag;
+	int  flag;
 	int iterat;
 
 	va_start(arguments, format);
@@ -39,8 +39,7 @@ void print_all(const char * const format, ...)
 				break;
 			default:
 				flag = 1;
-				iterat++;
-				continue;
+				break;
 		}
 		if (format[iterat + 1] != '\0' && flag == 0)
 			printf(", ");
