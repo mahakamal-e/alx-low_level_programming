@@ -39,7 +39,8 @@ void print_all(const char * const format, ...)
 				break;
 			default:
 				flag = 1;
-				break;
+				iterat++;
+				continue;
 		}
 		if (format[iterat + 1] != '\0' && flag == 0)
 			printf(", ");
