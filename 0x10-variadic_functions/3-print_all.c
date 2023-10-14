@@ -10,7 +10,7 @@ void print_all(const char * const format, ...)
 	va_list arguments;
 	char *cha;
 	int iterat;
-	int flag;
+	char *separate = "";
 
 	va_start(arguments, format);
 	iterat = 0;
@@ -20,30 +20,26 @@ void print_all(const char * const format, ...)
 		switch (format[iterat])
 		{
 			case 'c':
-				printf("%c", va_arg(arguments, int));
-				flag = 0;
+				printf("%s%c", separate, va_arg(arguments, int));
+				
 				break;
 			case 'i':
-				printf("%d", va_arg(arguments, int));
-				flag = 0;
+				printf("%s%d", separate, va_arg(arguments, int));
 				break;
 			case 'f':
-				printf("%f", va_arg(arguments, double));
-				flag = 0;
+				printf("%s%f", separate, va_arg(arguments, double));
 				break;
 			case 's':
 				cha = va_arg(arguments, char *);
 				if (cha == NULL)
 					printf("(nil)");
-				printf("%s", cha);
-				flag = 0;
+				printf("%s%s", separate, cha);
 				break;
 			default:
-				flag = 1;
-				break;
+				iterat++;
+				continue;
 		}
-		if (format[iterat + 1] != '\0' && flag == 0)
-			printf(", ");
+		separate = "";
 		iterat++;
 	}
 	printf("\n");
