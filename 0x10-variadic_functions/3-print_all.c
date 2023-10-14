@@ -9,11 +9,10 @@ void print_all(const char * const format, ...)
 {
 	va_list arguments;
 	char *cha;
-	int iterat;
+	int iterat = 0;
 	char *separate = "";
 
 	va_start(arguments, format);
-	iterat = 0;
 
 	while (format[iterat] != '\0')
 	{
