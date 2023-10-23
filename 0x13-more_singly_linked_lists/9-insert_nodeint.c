@@ -20,7 +20,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	n_node->n = n;
 	n_node->next = NULL;
 
-	if (inx == 0)
+	if (idx == 0)
 	{
 		n_node->next = *head;
 		*head = n_node;
