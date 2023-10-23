@@ -9,7 +9,7 @@ size_t print_listint(const listint_t *h)
 {
 	size_t size_nodes = 0;
 
-	while (h != NULL)
+	while (*h != NULL)
 	{
 		size_nodes++;
 		h = (*h).next;
