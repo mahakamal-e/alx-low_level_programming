@@ -12,7 +12,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	while (exclusive_value)
 	{
-		exclusive_value = exclusive_value & (exclusive_value >> 1);
+		exclusive_value = exclusive_value & (exclusive_value - 1);
 		count_bit++;
 	}
 	return (count_bit);
