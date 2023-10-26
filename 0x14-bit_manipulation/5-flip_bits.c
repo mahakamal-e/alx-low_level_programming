@@ -7,7 +7,7 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int exclusive_value = n ^ m;
+	unsigned int long exclusive_value = n ^ m;
 	unsigned int count_bit = 0;
 
 	while (exclusive_value)
