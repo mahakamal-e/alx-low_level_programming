@@ -1,5 +1,4 @@
 #include "main.h"
-#define UNUSED(code_error) (void)(code_error)
 /**
  * handle_error - check any error related to files
  * @code_error: error
@@ -7,8 +6,6 @@
  */
 void handle_error(int code_error, const char *error_mess)
 {
-	UNUSED(code_error);
-
 	dprintf(STDERR_FILENO, "Error: %s\n", error_mess);
 	exit(code_error);
 }
