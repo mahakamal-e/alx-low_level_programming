@@ -51,5 +51,5 @@ int main(int argc, char **argv)
 	if (file_to == -1)
 		handle_error(100, "Can't close fd");
 
-	return (0);
+	return (EXIT_SUCCESS);
 }
