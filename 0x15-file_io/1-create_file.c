@@ -8,7 +8,7 @@
 int create_file(const char *filename, char *text_content)
 {
 	int fd;
-	int i;
+	ssize_t i;
 	ssize_t _bytes = 0;
 
 	i = _strlen(text_content);
