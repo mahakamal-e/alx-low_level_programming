@@ -48,8 +48,10 @@ int main(int argc, char **argv)
 
 	if (file_from == -1)
 		handle_error(100, "Can't close fd");
+
+	file_to = close(file_to);
 	if (file_to == -1)
 		handle_error(100, "Can't close fd");
 
-	return (EXIT_SUCCESS);
+	return (0);
 }
