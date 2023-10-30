@@ -38,11 +38,10 @@ int main(int argc, char **argv)
 	{
 		if (write(file_to, buffer_, _bytes) != _bytes)
 			handle_error(99, "Can't write to file");
+		if (_bytes == -1)
+			handle_error(98, "Can't read from file");
 
 	}
-
-	if (_bytes == -1)
-		handle_error(98, "Can't read from file");
 
 	file_from = close(file_from);
 
