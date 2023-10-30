@@ -1,4 +1,6 @@
 #include "main.h"
+
+#define PERMISSIONS (S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH | S_IWGRP)
 /**
  * handle_error - check any error related to files
  * @code_error: error
@@ -18,8 +20,7 @@ void handle_error(int code_error, const char *error_mess)
  */
 int main(int argc, char **argv)
 {
-	int file_from = 0;
-	int file_to = 0;
+	int file_from = 0, file_to = 0;
 	ssize_t _bytes;
 	char buffer_[BUFF_SIZE];
 
@@ -30,7 +31,7 @@ int main(int argc, char **argv)
 	if (file_from == -1)
 		handle_error(98, "Can't read from file");
 
-	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC | O_APPEND, 0664);
+	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, PERMISSIONS);
 	if (file_to == -1)
 		handle_error(99, "Can't write to file");
 
