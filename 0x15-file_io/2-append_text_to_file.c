@@ -8,8 +8,8 @@
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
-	int length = 0;
-	int i;
+	ssize_t length = 0;
+	ssize_t i;
 	ssize_t _bytes = 0;
 
 	if (filename == NULL)
