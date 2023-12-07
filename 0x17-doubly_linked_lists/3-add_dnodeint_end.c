@@ -9,7 +9,7 @@
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *new_tail_node;
-	dlistint_t temp_node;
+	dlistint_t *temp_node;
 
 	new_tail_node =  malloc(sizeof(dlistint_t));
 
