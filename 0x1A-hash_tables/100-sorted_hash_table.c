@@ -99,7 +99,7 @@ void sort_hash_table(shash_table_t *ht, shash_node_t *node_new)
  * @ht: hash table
  * @key: key
  * @value: value.
- * Return: 1 on success and 0 on failure 
+ * Return: 1 on success and 0 on failure
  */
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
